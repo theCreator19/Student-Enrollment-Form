@@ -1,0 +1,147 @@
+header 
+{
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background: #46d7ac;
+    padding-top: 8px;
+    color: white;
+    font-weight: bold;
+        
+}
+body
+{
+    display: grid;
+}
+
+.table>:not(caption)>*>*
+{
+    border-bottom-width: 0;
+}
+.col 
+{
+    flex: 1 0 18%;
+}
+button
+{
+    margin-top: 1rem;
+    color: white;
+}
+#button-enroll
+{
+    background: #0283fb;
+    height: 80%;
+    border-radius: 3px;
+    border: 0;
+    width: 90%;
+    color: white;
+}
+#button-clear
+{
+    background: #da2845;
+    border: 0px ;
+    border-radius: 3px;
+    height: 80%;
+    width: 80%;
+    color: white;
+    margin-left: 1rem;
+}
+
+#clear-button
+{
+    padding-left: 4rem;
+}
+h5
+{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+img{
+    margin: 5px;
+    height: 7rem;
+    width: 7rem;
+    display: table-cell;
+
+}
+.tableEnrolledStudent
+{
+    background: #ebf2d3;
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+#enrolledStudentTableBody
+{
+    border: 1px solid #a7c941;
+}
+#enrolledStudentTableBody tr:nth-child(n):not(:nth-child(1))
+{
+    background: #ebf2d3;
+}
+@keyframes fadeIn
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#enrolledStudentTableBody tr:nth-child(1)
+{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+.tableEnrolledStudent thead tr
+{
+    background: #a7c941;
+    color:white;
+    border: 2px solid #a7c941;
+}
+.tableEnrolledStudent td
+{
+    border-left: 2px solid #a7c941;
+
+}
+
+@media only screen and (min-width:995px)
+{
+    #form{
+    border-right: 2px solid #46d7ac;
+    padding-right: 2rem;
+}
+}
+@media only screen and (max-width:995px)
+{
+    #form{
+    border-bottom: 2px solid #46d7ac;
+    padding-bottom: 3rem;
+}
+    h5{
+        padding-top: 3rem;
+    }
+}
+.recentAdded
+{
+    background: white;
+    border: 2px solid #a7c941;
+}
+
+#studentDescription
+{
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-right:6rem;
+    padding-bottom: 1rem;
+}
+footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: #46d7ac;
+    color: white;
+    position: fixed;
+    padding-top: 2px;
+    font-size: smaller;
+}
